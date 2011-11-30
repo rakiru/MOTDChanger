@@ -1,0 +1,22 @@
+author: rakiru
+database: false
+description: It, eh, changes your MOTD...
+main: com.fuckingwin.bukkit.rakiru.motdchanger.MOTDChangerPlugin
+name: MOTDChanger
+startup: postworld
+url: http://wiki.fuckingwin.com/
+version: '1.0'
+commands:
+  motd:
+    description: Change the MOTD of your server
+    permission: MOTDChanger.changemotd
+    usage: /motd [-t seconds] <MOTD>
+
+permissions:
+  motdchanger.*:
+    description: All MOTDChanger permissions
+    default: op
+    children:
+      motdchanger.changemotd: true
+  motdchanger.changemotd:
+    description: Change the MOTD
