@@ -14,5 +14,5 @@ Commands
 To change the MOTD, use the command:
 /motd New MOTD goes here
 
-To change your motd for one minute, use the command:
-/motd -t 1 New MOTD goes here
+To change your motd for 15 seconds, use the command:
+/motd -t 15 New MOTD goes here
